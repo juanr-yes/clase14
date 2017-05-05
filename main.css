@@ -18,8 +18,9 @@ body,html{
 }
 
 .row {
-    height: 100%;
-    display: table-row;
+  height: 100%;
+  float: none;
+  display: table-row;
 }
 .row .no-float {
   display: table-cell;
@@ -31,6 +32,10 @@ body,html{
 .menuLateral {
   padding: 0px 0px 0px 0px;
   height: 100%;
+}
+
+.mapa {
+  text-align: center; 
 }
 
 	/* remove outer padding */
@@ -150,7 +155,7 @@ body,html{
 
 	/* .....NavBar: Fully showing nav bar..... */
 
-	@media (min-width: 800px) {
+	@media (min-width: 992px) {
 
 		/*Allow main to be next to Nav*/
 		.main{
