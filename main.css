@@ -18,8 +18,9 @@ body,html{
 }
 
 .row {
-    height: 100%;
-    display: table-row;
+  height: 100%;
+  float: none;
+  display: table-row;
 }
 .row .no-float {
   display: table-cell;
