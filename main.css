@@ -98,12 +98,12 @@ body,html{
 
 		/*adds border top to first nav box */
 		nav.sidebar .navbar-nav > li:first-child{
-			border-top: 1px #e5e5e5 solid;
+			border-top: 2px #e5e5e5 solid;
 		}
 
 		/*adds border to bottom nav boxes*/
 		nav.sidebar .navbar-nav > li{
-			border-bottom: 1px #e5e5e5 solid;
+			border-bottom: 2px #e5e5e5 solid;
 		}
 
 		/* Colors/style dropdown box*/
@@ -184,4 +184,97 @@ body,html{
 	}
 	section{
 		padding-left: 15px;
+  }
+
+  @media only screen and (min-width: 778px) and (max-width: 991px) {
+
+    .navbar-inverse .navbar-nav>.active>a {
+      width: 45px;
+    }
+.main{
+			position: absolute;
+			width: calc(100% - 40px); /*keeps 100% minus nav size*/
+			margin-left: 40px;
+			float: right;
+		}
+
+		/*lets nav bar to be showed on mouseover
+		nav.sidebar:hover + .main{
+			margin-left: 200px;
+		}*/
+
+		/*Center Brand*/
+		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			margin-left: 0px;
+		}
+		/*Center Brand*/
+		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		/*Center Icons*/
+		nav.sidebar a{
+			padding-right: 13px;
+		}
+
+		/*adds border top to first nav box */
+		nav.sidebar .navbar-nav > li:first-child{
+			border-top: 2px #e5e5e5 solid;
+		}
+
+		/*adds border to bottom nav boxes*/
+		nav.sidebar .navbar-nav > li{
+			border-bottom: 2px #e5e5e5 solid;
+		}
+
+		/* Colors/style dropdown box*/
+		nav.sidebar .navbar-nav .open .dropdown-menu {
+			position: static;
+			float: none;
+			width: auto;
+			margin-top: 0;
+			background-color: transparent;
+			border: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		/*allows nav box to use 100% width*/
+		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+			padding: 0 0px 0 0px;
+		}
+
+		/*colors dropdown box text */
+		.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+			color: #777;
+		}
+
+		/*gives sidebar width/height*/
+		nav.sidebar{
+			width: 50px;
+			height: 100%;
+			/*margin-left: -160px;
+			float: left;
+			z-index: 8000;*/
+			margin-bottom: 0px;
+		}
+
+		/*give sidebar 100% width;*/
+		nav.sidebar li {
+			width: 100%;
+		}
+
+		 /*Move nav to full on mouse over
+		nav.sidebar:hover{
+			margin-left: 0px;
+		}
+		/*for hiden things when navbar hidden*/
+		.forAnimate{
+			opacity: 0;
+		}*/
+	}
+
+	/* .....NavBar: Fully showing nav bar..... */
   }
