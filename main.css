@@ -35,7 +35,7 @@ body,html{
 }
 
 .mapa {
-  text-align: center;
+  text-align: center; 
 }
 
 	/* remove outer padding */
@@ -155,7 +155,7 @@ body,html{
 
 	/* .....NavBar: Fully showing nav bar..... */
 
-	@media (min-width: 800px) {
+	@media (min-width: 992px) {
 
 		/*Allow main to be next to Nav*/
 		.main{
